@@ -1,0 +1,20 @@
+
+[patch.crates-io.naga]
+git = "https://github.com/ForesightMiningSoftwareCorporation/wgpu"
+rev = "ddbe5e2aba8a406ff2ea0d20f270c08e7c2850c5"
+#path = "../wgpu/naga"
+
+[patch."https://github.com/gfx-rs/naga".naga]
+git = "https://github.com/ForesightMiningSoftwareCorporation/wgpu"
+rev = "ddbe5e2aba8a406ff2ea0d20f270c08e7c2850c5"
+#path = "../wgpu/naga"
+
+[patch.crates-io.wgpu]
+git = "https://github.com/ForesightMiningSoftwareCorporation/wgpu"
+rev = "ddbe5e2aba8a406ff2ea0d20f270c08e7c2850c5"
+#path = "../wgpu/wgpu"
+
+[patch.crates-io.wgpu-types]
+git = "https://github.com/ForesightMiningSoftwareCorporation/wgpu"
+rev = "ddbe5e2aba8a406ff2ea0d20f270c08e7c2850c5"
+#path = "../wgpu/wgpu-types"

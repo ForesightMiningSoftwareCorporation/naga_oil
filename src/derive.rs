@@ -448,6 +448,19 @@ impl<'a> DerivedModule<'a> {
                     | Statement::Continue
                     | Statement::Kill
                     | Statement::Barrier(_) => stmt.clone(),
+                    Statement::ImageAtomic {
+                        image,
+                        coordinate,
+                        sample,
+                        fun,
+                        value,
+                    } => Statement::ImageAtomic {
+                        image: map_expr!(image),
+                        coordinate: map_expr!(coordinate),
+                        sample: map_expr!(sample),
+                        fun: *fun,
+                        value: map_expr!(value),
+                    },
                 }
             })
             .collect();
